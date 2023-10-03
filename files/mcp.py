@@ -11,8 +11,8 @@ def save_pickle(PATH, c_list):
 
 
 def main():
-    path = 'files\mcp_lists.pickle'
-    tpath = 'files\mcp_lists.txt'
+    path = 'files\data\mcp_lists.pickle'
+    tpath = 'files\data\mcp_lists.txt'
     if len(sys.argv) < 2:
         print("argment ERROR\nmcp comand")
         exit()

@@ -1,6 +1,0 @@
-alias         contents
--------------------------
-aaa                   os.remove(path)
-bbb                   os.remove(path)
-ccc                   os.remove(path)
-genzaiti      現在地juusyo        住所
