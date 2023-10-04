@@ -10,8 +10,8 @@ def save_pickle(PATH, c_list):
 
 
 def main():
-    path = 'C:\\yoshikawa\\Mybat\\files\\data\\mcp_lists.pickle'
-    tpath = 'C:\\yoshikawa\\Mybat\\files\\data\\mcp_lists.txt'
+    path = 'C:\\python\\myprogram\\mcp_yosikawa\\files\\data\\mcp_lists.pickle'
+    tpath = 'C:\\python\\myprogram\\mcp_yosikawa\\files\\data\\mcp_lists.txt'
     if len(sys.argv) < 2:
         print("argment ERROR\nmcp comand")
         exit()
@@ -30,10 +30,18 @@ def main():
             aliases = pickle.load(f)
 
     if key == "remove":
-        if os.path.isfile(path):
-            os.remove(path)
-        if os.path.isfile(tpath):
-            os.remove(tpath)
+        if len(sys.argv) < 3:
+            if os.path.isfile(path):
+                os.remove(path)
+            if os.path.isfile(tpath):
+                os.remove(tpath)
+        else:
+            ward = sys.argv[2].lower()
+            for i in range(len(aliases)):
+                alias = aliases[i][0]
+                if ward == alias:
+                    del aliases[i]
+                    save_pickle(path, aliases)
         exit()
 
     if key == "show":
