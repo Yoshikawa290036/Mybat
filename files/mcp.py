@@ -10,8 +10,8 @@ def save_pickle(PATH, c_list):
 
 
 def main():
-    path = 'C:\\python\\myprogram\\mcp_yosikawa\\files\\data\\mcp_lists.pickle'
-    tpath = 'C:\\python\\myprogram\\mcp_yosikawa\\files\\data\\mcp_lists.txt'
+    path = 'C:\\yoshikawa\\Mybat\\files\\data\\mcp_lists.pickle'
+    tpath = 'C:\yoshikawa\Mybat\\files\\data\\mcp_lists.txt'
     if len(sys.argv) < 2:
         print("argment ERROR\nmcp comand")
         exit()
