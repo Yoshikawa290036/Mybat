@@ -1,1 +1,1 @@
-@py files\mcp.py %1 %2
+@start /b py C:\yoshikawa\Mybat\files\mcp.py %*

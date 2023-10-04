@@ -1,1 +1,1 @@
-@ls2.exe -A --color=auto
+@files/ls2.exe -A --color=auto
